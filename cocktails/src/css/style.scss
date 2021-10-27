@@ -1,0 +1,90 @@
+$color-primary: #20232a;
+$color-secondary: #0096c7;
+$color-accent: #fdfdfc;
+$color-hover: #168aad;
+$color-nav: #4a4e69;
+$color-font: #14213d;
+$color-plain: #fff;
+
+
+$font-family: monospace;
+$font-size: 2.3rem;
+$secondary-size: 1.5rem;
+$ternary-size: 0.7rem;
+
+
+
+//deafult reset
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-size: $font-size;
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    Segoe UI,
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    Fira Sans,
+    Droid Sans,
+    Helvetica Neue,
+    sans-serify;
+    color: $color-font;
+    background-color: $color-accent;
+
+}
+
+//container of the navbar
+
+.container{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-primary;
+    padding: 2rem;
+    box-shadow: 1px 1px 1px 6px $color-secondary;
+    color: $color-plain;
+    
+h1{
+    font-size: $font-size;
+    span{
+        color: #d3c0c7;
+    }
+}
+
+
+    //menu section
+
+    .menu-tabs{
+        button{
+            margin-right: 4rem;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            font-size: $secondary-size ;
+            cursor: pointer;
+            border-bottom : 2px solid transparent;
+            color: $color-plain;
+          
+        }
+
+        button:hover{
+            border-bottom: 2px solid $color-hover;
+            transition: 0.4s all ease-in-out;
+        }
+
+    }
+}
+
