@@ -8,10 +8,12 @@ $color-plain: #fff;
 
 
 $font-family: monospace;
-$font-size: 2.3rem;
-$secondary-size: 1.5rem;
-$ternary-size: 0.7rem;
+$font-size: 1.3rem;
+$main-size:2.3rem;
+$secondary-size: 1.9rem;
+$ternary-size: 1.3rem;
 
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Kalam:wght@700&display=swap');
 
 
 //deafult reset
@@ -56,9 +58,10 @@ body{
     padding: 2rem;
     box-shadow: 1px 1px 1px 6px $color-secondary;
     color: $color-plain;
+    font-size: $main-size;
     
 h1{
-    font-size: $font-size;
+    
     span{
         color: #d3c0c7;
     }
@@ -88,3 +91,99 @@ h1{
     }
 }
 
+.home-container{
+    margin-top: 10rem;
+}
+
+//form component 
+
+.form-section{
+text-align: center;
+margin-left: auto;
+margin-right: auto;
+max-width: 50vw;
+background-color: #d8e1e4;
+padding: 8rem;
+font-size: $secondary-size;
+border-radius: 20px;
+box-shadow: 0px 0px 10px black;
+  transition: 0.9s all ease-in-out;
+  .blink{
+      height: 3.9rem;
+      color:#112a31;
+      font-family: cursive;
+      text-transform: uppercase;
+    font-family: 'Cedarville Cursive',
+    cursive;
+    font-family: 'Kalam',
+    cursive;
+  }
+  h1{
+      color:$color-nav;
+  }
+
+input{
+ margin-top: 3rem;
+    width: 20vw;
+    height: 4vh;
+    font-size: $font-size;
+}
+input:focus{
+    background-color: $color-accent;
+    color: $color-nav;
+}
+}
+
+
+.form-section:hover{
+    box-shadow: none;
+    transition: 0.9s all ease-in-out;
+}
+
+
+
+
+//about me page
+
+.about-section{
+    max-width: 1100px;
+    margin-top: 2rem;
+    margin-bottom: 55rem;
+   margin-left: auto;
+   margin-right: auto; 
+   h1{
+       margin-bottom: 2rem;
+   }
+}
+
+
+//footer-section
+.footer-section{
+margin-top: 15rem;
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-primary;
+    color:$color-plain;
+    padding: 3rem;
+    font-size: $secondary-size;
+
+    h4{
+        margin-bottom: 1rem;
+        color: #ff237e;
+    }
+    p, a{
+        margin-top: 0.2rem;
+        color:$color-plain;
+        text-decoration: none;
+        display: block;
+        font-size: $ternary-size;
+            letter-spacing: 0.1rem;
+    
+    }
+    a:hover{
+        color: $color-hover;
+    }
+    .third{
+        max-width:29vw;
+    }
+}

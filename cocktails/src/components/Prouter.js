@@ -9,20 +9,20 @@ const Prouter = () => {
       <div>
         <Router>
             <Navbar/>
-          <switch>
+          <Switch>
             <Route exact path="/">
               <h3>
-                {" Home"}
+     
                 <Home />
               </h3>
             </Route>
             <Route path="/about">
               <h3>
-                {"About"}
+             
                 <About />
               </h3>
             </Route>
-          </switch>
+          </Switch>
         </Router>
       </div>
     );
