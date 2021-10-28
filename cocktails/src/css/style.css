@@ -160,8 +160,9 @@ body {
 }
 
 .Loading-text {
-  margin: 20vh 0 0 20vw;
-  font-size: 6rem;
+  margin-top: 50vh;
+  text-align: center;
+  font-size: 2rem;
 }
 
 .drinks-panel {
@@ -172,6 +173,7 @@ body {
       flex-wrap: wrap;
   margin: 7rem auto 0 auto;
   text-align: center;
+  padding: 1rem;
 }
 
 .drinks-panel .drinks-component {
@@ -186,7 +188,7 @@ body {
 }
 
 .drinks-panel .drinks-component img {
-  width: 100%;
+  max-width: 90vw;
 }
 
 .drinks-panel button {
@@ -284,6 +286,7 @@ body {
   border-radius: 1rem;
   -webkit-transition: 0.6s all ease-in-out;
   transition: 0.6s all ease-in-out;
+  margin-left: 5rem;
 }
 
 .individual-item .single-item img:hover {
@@ -371,7 +374,7 @@ body {
   .single-item img {
     height: 40vh;
     width: 65vw !important;
-    margin: 0;
+    margin: 0 !important;
   }
   .footer-section {
     display: block;
