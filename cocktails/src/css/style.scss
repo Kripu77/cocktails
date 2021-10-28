@@ -197,3 +197,51 @@ margin-top: 15rem;
        
        font-size: 6rem;
    }
+
+
+
+   //main drinks dislplay section
+
+   .drinks-panel{
+       display: flex;
+       flex-wrap: wrap;
+       margin-top: 7rem;
+       text-align: center;
+       .drinks-component{
+           margin: 2rem;
+           background-color: white;
+           height: 59vh;
+           width: 30vw;
+           margin: 5rem auto;
+            box-shadow: 1px 1px 10px black;
+          transition: 0.7s all ease-in-out;
+           img{
+               width: 100%;
+           }
+       }
+button{
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.3rem;
+    background-color: $color-secondary;
+    color:$color-plain;
+    padding: 1rem;
+    width: 8rem;
+    margin-top: 2rem;
+}
+button:hover{
+    background-color: $color-hover;
+    transition: 0.5s all ease-in-out;
+}
+       
+   }
+
+ 
+
+
+   .drinks-component:hover {
+       box-shadow: 1px 1px 30px black;
+       transition: 0.7s all ease-in-out;
+    transform: scale(1.09);      
+   }
