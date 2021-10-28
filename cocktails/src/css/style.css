@@ -6,6 +6,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   width: 100%;
@@ -165,15 +169,14 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 7rem;
+  margin: 7rem auto 0 auto;
   text-align: center;
 }
 
 .drinks-panel .drinks-component {
   margin: 2rem;
   background-color: white;
-  height: 59vh;
-  width: 30vw;
+  padding-bottom: 1rem;
   margin: 5rem auto;
   -webkit-box-shadow: 1px 1px 10px black;
           box-shadow: 1px 1px 10px black;
@@ -240,5 +243,75 @@ body {
 
 .error-page img {
   width: 50vw;
+}
+
+.individual-item {
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.individual-item button {
+  border: none;
+  background-color: #aa1553;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.individual-item button:hover {
+  background-color: #ff237e;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.5s all ease-in-out;
+  transition: 0.5s all ease-in-out;
+}
+
+.individual-item .single-item {
+  margin-top: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.individual-item .single-item img {
+  max-width: 40vw;
+  border-radius: 1rem;
+  -webkit-transition: 0.6s all ease-in-out;
+  transition: 0.6s all ease-in-out;
+}
+
+.individual-item .single-item img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: 0.6s all ease-in-out;
+  transition: 0.6s all ease-in-out;
+}
+
+.individual-item .single-item .details {
+  margin-top: 2rem;
+  margin-left: -19rem;
+}
+
+.individual-item .single-item p {
+  width: 30vw;
+  line-height: 2rem;
+  margin: 2rem;
+}
+
+.individual-item .single-item span {
+  background-color: #aa1553;
+  color: white;
+  border-radius: 10px;
+  padding: 0.2rem;
+}
+
+.individual-item .single-item h4 span {
+  background-color: transparent;
+  color: green;
 }
 /*# sourceMappingURL=style.css.map */

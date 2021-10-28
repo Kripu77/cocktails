@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { useCreateUserContext } from './Cocktailcontex'
 import { useParams, Link } from 'react-router-dom';
+import Rating from "react-rating"
 
 const Individual = () => {
+
+    const [newData, setNewData] = useState([]);
 const{id} = useParams();
+
+//state for the corresponding id data
+
+
 console.log(id)
 
 
@@ -14,27 +21,60 @@ console.log(id)
       const fnlData = drinks.filter((value) => {
         return value.idDrink ===id;
       });
-      const check = [...fnlData]
-      console.log(check)
+    console.log(fnlData)
 
-      const {
-        strIngredient1,
-        strGlass,
-        strCategory,
-        strAlcoholic,
-        strIngredient2,
-        strIngredient3,
-        strInstructions,
-        strInstructionsDE,
-        strMeasure1,
-        strInstructionsIT,
-        strDrinkThumb,
-       } = check;
-      console.log(strDrinkThumb)
     return (
       <section className="individual-item">
-        <img src={strDrinkThumb} />
-        <div></div>
+          <Link to="/">
+              <button>Back to Home</button>
+          </Link>
+  {
+     fnlData.map((checkData)=>{
+        const { idDrink, strCategory, strDrinkThumb, strAlcoholic, strGlass, strIngredient1, strIngredient2, strIngredient3, strInstructions, strInstructionsDE, strInstructionsIT, 
+        strMeasure1,
+strMeasure2,
+strMeasure3,
+strMeasure4 } = checkData;
+        return (
+          <div key={idDrink} className="single-item">
+            <img src={strDrinkThumb} />
+            <div className="details">
+              <h1>
+                <span>Category: </span>
+                {strCategory}
+              </h1>
+              <p>
+                <span> Info:</span> {strAlcoholic}
+              </p>
+              <p>
+                {" "}
+                <span> Glass: </span>
+                {strGlass}
+              </p>
+              <p>
+                <span>Ingredients used:</span> {strIngredient1},{" "}
+                {strIngredient2},{strIngredient3}.
+              </p>
+              <p>
+                <span>More Info:</span>
+                {strInstructionsDE} {strInstructionsDE}
+              </p>
+              <p>
+                {" "}
+                <span> Sizes: </span> {strMeasure1}, {strMeasure2},{" "}
+                {strMeasure3}
+              </p>
+              <h4>
+                {" "}
+                Rate the Item: <Rating initialRating={3}  />
+              </h4>
+            </div>
+          </div>
+        );
+
+      })
+  }
+      
       </section>
     );
 }

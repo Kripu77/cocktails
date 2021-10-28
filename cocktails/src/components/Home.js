@@ -5,6 +5,7 @@ import MainContainer from './MainContainer';
 import Search from './Search';
 import { useCreateUserContext } from './Cocktailcontex';
 import Noresults from './Noresults';
+import LazyLoad from "react-lazyload";
 
 const Home = () => {
    const {data, isError} = useCreateUserContext();
@@ -15,11 +16,11 @@ const Home = () => {
 
   console.log(drinks)
     return (
-      <div className='home-container'>
- 
-        <Search/>
-        <MainContainer/>
-       
+      <div className="home-container">
+        <Search />
+  
+          <MainContainer />
+
       </div>
     );
 }
