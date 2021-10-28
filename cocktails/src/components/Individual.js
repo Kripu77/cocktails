@@ -1,7 +1,9 @@
 import React, {useState} from 'react'
-import { useCreateUserContext } from './Cocktailcontex'
+import { useCreateUserContext } from './Cocktailcontex';
+
 import { useParams, Link } from 'react-router-dom';
 import Rating from "react-rating"
+
 
 const Individual = () => {
 

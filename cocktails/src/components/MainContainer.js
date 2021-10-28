@@ -3,7 +3,7 @@ import { useCreateUserContext } from './Cocktailcontex'
 import { Link } from 'react-router-dom';
 
 import LazyLoad  from 'react-lazyload';
-import { motion } from "framer-motion";
+
 const MainContainer = () => {
     const{data, isError} = useCreateUserContext();
 const{drinks} = data;
@@ -15,8 +15,8 @@ console.log(drinks)
     drinks.map((value)=>{
         const {idDrink, strCategory, strDrinkThumb, strIngredient1, strIngredient3, strIngredient2, strGlass } = value;
         return (
-          <motion.div className="drinks-component" key={idDrink}>
-            <LazyLoad height={1000} offset={100}>
+          <div className="drinks-component" key={idDrink}>
+            <LazyLoad height={10} offset={100}>
               <img src={strDrinkThumb} />
               <h3> {strCategory}</h3>
               <h4>Alcoholic</h4>
@@ -25,7 +25,7 @@ console.log(drinks)
                 <button> Details</button>
               </Link>
             </LazyLoad>
-          </motion.div>
+          </div>
         );
 
     })
