@@ -1,9 +1,11 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Link, Route, Switch } from "react-router-dom";
 import About from "./About";
 import Home from "./Home";
 import Navbar from './Navbar';
 import Footer from './Footer';
+import Error from './Error';
+import Individual from './Individual';
 
 const Prouter = () => {
     return (
@@ -21,7 +23,14 @@ const Prouter = () => {
                 <About />
               </h3>
             </Route>
+            <Route path="/individual/:id">
+              <Individual />
+            </Route>
+            <Link exact path="*">
+              <Error />
+            </Link>
           </Switch>
+
           <Footer />
         </Router>
       </div>

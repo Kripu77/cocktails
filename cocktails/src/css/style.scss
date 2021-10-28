@@ -147,8 +147,8 @@ input:focus{
 
 .about-section{
     max-width: 1100px;
-    margin-top: 2rem;
-    margin-bottom: 55rem;
+    margin-top: 10rem;
+    margin-bottom: 14rem;
    margin-left: auto;
    margin-right: auto; 
    h1{
@@ -261,4 +261,18 @@ button:hover{
 
    .form{
        margin-top: 4rem;
+   }
+
+
+
+   //main -errro page
+
+   .error-page{
+       width: 50vw;
+       margin: 8rem auto 0 auto;
+       color: black;
+       
+       img{
+           width: 50vw;
+       }
    }

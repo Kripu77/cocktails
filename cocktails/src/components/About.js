@@ -10,8 +10,9 @@ const About = () => {
             Hi, How are you? Hope you liked the project. Please connect with me
             around the web if you liked my work. Thank You!!!
           </p>
+          <img src="http://www.emilywrites.co.nz/wp-content/uploads/2018/08/Hire-Me-1024x493.png" />
         </article>
-        <Footer />
+      
       </section>
     );
 }

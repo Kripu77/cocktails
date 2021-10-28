@@ -10,7 +10,8 @@ const {input, setInput} = useCreateUserContext();
  init(textRef.current, {
    showCursor: false,
    strings: ["Hola", "Hello", "Namaste", "Bonjur"],
-   typeSpeed: 400,
+   typeSpeed: 200,
+   backSpeed:200,
    cursorChar: "|",
  });
     },[])
@@ -20,9 +21,9 @@ const {input, setInput} = useCreateUserContext();
       <section className="form">
         <div className="form-section">
           <h1 ref={textRef} className='blink'> </h1>
-          <h1> Search Your Favourite Drink</h1>
+         <label htmlFor='name'> Search Your Favourite Cocktail</label>
           <form>
-            <input type="text" value={input} onChange={(e)=>setInput(e.target.value)}></input>
+            <input type="text" id="name" value={input} onChange={(e)=>setInput(e.target.value)}></input>
           </form>
         </div>
       </section>
