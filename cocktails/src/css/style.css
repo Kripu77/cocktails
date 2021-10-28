@@ -392,5 +392,17 @@ body {
   .footer-section a, .footer-section p {
     font-size: 0.6rem;
   }
+  .about-section {
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  .about-section p {
+    font-size: 0.7rem;
+  }
+  .about-section img {
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 /*# sourceMappingURL=style.css.map */

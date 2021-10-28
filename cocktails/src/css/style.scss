@@ -226,6 +226,7 @@ padding-bottom: 1rem;
             box-shadow: 1px 1px 10px black;
           transition: 0.7s all ease-in-out;
            img{
+
                max-width: 90vw
            }
        }
@@ -435,6 +436,19 @@ text-align: center;
        }
       a, p{
            font-size: 0.6rem;
+       }
+   }
+   .about-section{
+       font-size: 0.8rem;
+text-align: center;
+       p{
+           font-size: 0.7rem
+       }
+
+       img{
+           width: 60vw;
+           margin-left: auto;
+          margin-right: auto;
        }
    }
 }
