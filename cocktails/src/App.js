@@ -6,6 +6,7 @@ import Prouter from './components/Prouter'
 import "./css/style.css"
 
 const App = () => {
+    document.title="Cocktail DB"
      const { isLoading } = useCreateUserContext();
 
      if(isLoading){

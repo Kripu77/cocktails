@@ -2,7 +2,8 @@ import React, {useState} from 'react'
 import { useCreateUserContext } from './Cocktailcontex';
 
 import { useParams, Link } from 'react-router-dom';
-import Rating from "react-rating"
+import Rating from "react-rating";
+import { Helmet } from 'react-helmet';
 
 
 const Individual = () => {
@@ -27,56 +28,69 @@ console.log(id)
 
     return (
       <section className="individual-item">
-          <Link to="/">
-              <button>Back to Home</button>
-          </Link>
-  {
-     fnlData.map((checkData)=>{
-        const { idDrink, strCategory, strDrinkThumb, strAlcoholic, strGlass, strIngredient1, strIngredient2, strIngredient3, strInstructions, strInstructionsDE, strInstructionsIT, 
-        strMeasure1,
-strMeasure2,
-strMeasure3,
-strMeasure4 } = checkData;
-        return (
-          <div key={idDrink} className="single-item">
-            <img src={strDrinkThumb} />
-            <div className="details">
-              <h1>
-                <span>Category: </span>
-                {strCategory}
-              </h1>
-              <p>
-                <span> Info:</span> {strAlcoholic}
-              </p>
-              <p>
-                {" "}
-                <span> Glass: </span>
-                {strGlass}
-              </p>
-              <p>
-                <span>Ingredients used:</span> {strIngredient1},{" "}
-                {strIngredient2},{strIngredient3}.
-              </p>
-              <p>
-                <span>More Info:</span>
-                {strInstructionsDE} {strInstructionsDE}
-              </p>
-              <p>
-                {" "}
-                <span> Sizes: </span> {strMeasure1}, {strMeasure2},{" "}
-                {strMeasure3}
-              </p>
-              <h4>
-                {" "}
-                Rate the Item: <Rating initialRating={3}  />
-              </h4>
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Cocktail Page</title>
+          <link rel="canonical" href="http://kripukhadka.com" />
+        </Helmet>
+        <Link to="/">
+          <button>Back to Home</button>
+        </Link>
+        {fnlData.map((checkData) => {
+          const {
+            idDrink,
+            strCategory,
+            strDrinkThumb,
+            strAlcoholic,
+            strGlass,
+            strIngredient1,
+            strIngredient2,
+            strIngredient3,
+            strInstructions,
+            strInstructionsDE,
+            strInstructionsIT,
+            strMeasure1,
+            strMeasure2,
+            strMeasure3,
+            strMeasure4,
+          } = checkData;
+          return (
+            <div key={idDrink} className="single-item">
+              <img src={strDrinkThumb} />
+              <div className="details">
+                <h1>
+                  <span>Category: </span>
+                  {strCategory}
+                </h1>
+                <p>
+                  <span> Info:</span> {strAlcoholic}
+                </p>
+                <p>
+                  {" "}
+                  <span> Glass: </span>
+                  {strGlass}
+                </p>
+                <p>
+                  <span>Ingredients used:</span> {strIngredient1},{" "}
+                  {strIngredient2},{strIngredient3}.
+                </p>
+                <p>
+                  <span>More Info:</span>
+                  {strInstructionsDE} {strInstructionsDE}
+                </p>
+                <p>
+                  {" "}
+                  <span> Sizes: </span> {strMeasure1}, {strMeasure2},{" "}
+                  {strMeasure3}
+                </p>
+                <h4>
+                  {" "}
+                  Rate the Item: <Rating initialRating={3} />
+                </h4>
+              </div>
             </div>
-          </div>
-        );
-
-      })
-  }
-      
+          );
+        })}
       </section>
     );
 }
