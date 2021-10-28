@@ -128,7 +128,7 @@ body {
       justify-content: space-around;
   background-color: #20232a;
   color: #fff;
-  padding: 3rem;
+  padding: 7rem;
   font-size: 1.9rem;
 }
 
@@ -203,6 +203,11 @@ body {
   transition: 0.5s all ease-in-out;
 }
 
+.drinks-panel h4 {
+  color: gray;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .drinks-component:hover {
   -webkit-box-shadow: 1px 1px 30px black;
           box-shadow: 1px 1px 30px black;
@@ -210,5 +215,20 @@ body {
   transition: 0.7s all ease-in-out;
   -webkit-transform: scale(1.09);
           transform: scale(1.09);
+}
+
+.results {
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15rem;
+}
+
+.results img {
+  width: 60vw;
+}
+
+.form {
+  margin-top: 4rem;
 }
 /*# sourceMappingURL=style.css.map */

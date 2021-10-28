@@ -15,7 +15,7 @@ export const Cocktailcontext = ({children}) => {
     //fetch data inside useEffect
 
     const fecthFn=()=>{
-fetch(url)
+fetch(`${url}${input}`)
 .then((resp)=>{
  
     if(resp.status>=200 || resp.status<=299){
@@ -24,6 +24,7 @@ fetch(url)
     else{
         setIsLoading(false)
         setIsError(true);
+        setData([])
     }
 })
 .then((data)=>{
@@ -40,13 +41,13 @@ setIsError(true)})
 
     useEffect(()=>{
  fecthFn();
-    },[])
+    },[input])
 
     
     return (
         <div>
             
-            <createUserContext.Provider value={{isLoading, isError, data, input}}>
+            <createUserContext.Provider value={{isLoading, isError, data, input, setInput}}>
 {children}
             </createUserContext.Provider>
         </div>

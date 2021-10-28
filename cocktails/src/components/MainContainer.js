@@ -14,7 +14,7 @@ console.log(drinks)
             <div className='drinks-component' key={idDrink}>
               
                 <img src={strDrinkThumb}/>
-                <h3> Category: {strCategory}</h3>
+                <h3>  {strCategory}</h3>
                 <h4>Alcoholic</h4>
                 <h5> {strGlass}</h5>
                 <button> Details</button>

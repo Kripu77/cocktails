@@ -1,7 +1,10 @@
 import React, {useRef, useEffect} from 'react'
   import { init } from "ityped";
+  import { useCreateUserContext } from './Cocktailcontex';
 
 const Search = () => {
+const {input, setInput} = useCreateUserContext();
+
     const textRef = useRef(null);
     useEffect(()=>{
  init(textRef.current, {
@@ -19,7 +22,7 @@ const Search = () => {
           <h1 ref={textRef} className='blink'> </h1>
           <h1> Search Your Favourite Drink</h1>
           <form>
-            <input type="text"></input>
+            <input type="text" value={input} onChange={(e)=>setInput(e.target.value)}></input>
           </form>
         </div>
       </section>
