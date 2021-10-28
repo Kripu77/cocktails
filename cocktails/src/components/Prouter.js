@@ -26,9 +26,9 @@ const Prouter = () => {
             <Route path="/individual/:id">
               <Individual />
             </Route>
-            <Link exact path="*">
+            <Route exact path="*">
               <Error />
-            </Link>
+            </Route>
           </Switch>
 
           <Footer />

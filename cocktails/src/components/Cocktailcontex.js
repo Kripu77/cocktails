@@ -47,7 +47,7 @@ setIsError(true)})
     return (
         <div>
             
-            <createUserContext.Provider value={{isLoading, isError, data, input, setInput}}>
+            <createUserContext.Provider value={{isLoading, setIsLoading, isError, data, input, setInput}}>
 {children}
             </createUserContext.Provider>
         </div>
