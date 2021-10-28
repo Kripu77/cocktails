@@ -3,10 +3,10 @@ import React, {useState, useEffect, useContext} from 'react'
 
 //create context 
 const createUserContext = React.createContext();
-const url = "www.thecocktaildb.com/api/json/v1/1/lookup.php?i=11007";
+const url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=";
 export const Cocktailcontext = ({children}) => {
 
-    const[isLoading, setIsLoading] = useState(false);
+    const[isLoading, setIsLoading] = useState(true);
     const[ isError, setIsError] = useState(false);
     const [ data, setData] = useState([]);
     const[input, setInput] = useState("");
@@ -32,7 +32,8 @@ console.log(data)
 setIsLoading(false)
 setIsError(false)
 })
-.catch((err)=>console.error(err))
+.catch((err)=>{console.error(err)
+setIsError(true)})
     }
 
 
