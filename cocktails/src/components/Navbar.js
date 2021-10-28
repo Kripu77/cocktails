@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useCreateUserContext } from './Cocktailcontex';
 
 const Navbar = () => {
+    console.log(useCreateUserContext())
     return (
       <nav>
         <section className="container">

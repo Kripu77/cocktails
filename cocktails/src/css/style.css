@@ -153,4 +153,9 @@ body {
 .footer-section .third {
   max-width: 29vw;
 }
+
+.Loading-text {
+  margin: 20vh 0 0 20vw;
+  font-size: 6rem;
+}
 /*# sourceMappingURL=style.css.map */
