@@ -20,6 +20,7 @@ const Navbar = () => {
             <Link to="/about">
               <button>About</button>
             </Link>
+            
           </section>
         </section>
       </nav>

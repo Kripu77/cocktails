@@ -14,7 +14,17 @@ body {
   height: 100vh;
   width: 100%;
   font-size: 1.3rem;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serify;
+  font-family: -apple-system,
+ BlinkMacSystemFont,
+ Segoe UI,
+ Roboto,
+ Oxygen,
+ Ubuntu,
+ Cantarell,
+ Fira Sans,
+ Droid Sans,
+ Helvetica Neue,
+ sans-serify;
   color: #14213d;
   background-color: #fdfdfc;
 }
@@ -84,8 +94,10 @@ body {
   color: #112a31;
   font-family: cursive;
   text-transform: uppercase;
-  font-family: 'Cedarville Cursive', cursive;
-  font-family: 'Kalam', cursive;
+  font-family: 'Cedarville Cursive',
+ cursive;
+  font-family: 'Kalam',
+ cursive;
 }
 
 .form-section h1 {
@@ -160,9 +172,8 @@ body {
 }
 
 .Loading-text {
-  margin-top: 50vh;
-  text-align: center;
-  font-size: 2rem;
+  margin: 20vh 0 0 20vw;
+  font-size: 6rem;
 }
 
 .drinks-panel {
@@ -173,7 +184,6 @@ body {
       flex-wrap: wrap;
   margin: 7rem auto 0 auto;
   text-align: center;
-  padding: 1rem;
 }
 
 .drinks-panel .drinks-component {
@@ -188,7 +198,7 @@ body {
 }
 
 .drinks-panel .drinks-component img {
-  max-width: 90vw;
+  width: 40vw;
 }
 
 .drinks-panel button {
@@ -286,7 +296,6 @@ body {
   border-radius: 1rem;
   -webkit-transition: 0.6s all ease-in-out;
   transition: 0.6s all ease-in-out;
-  margin-left: 5rem;
 }
 
 .individual-item .single-item img:hover {
@@ -352,8 +361,10 @@ body {
     width: 35vw;
   }
   .drinks-component {
-    width: 90vw;
+    width: 50vw;
     height: auto;
+
+
   }
   .individual-item {
     display: block;
@@ -374,7 +385,7 @@ body {
   .single-item img {
     height: 40vh;
     width: 65vw !important;
-    margin: 0 !important;
+    margin: 0;
   }
   .footer-section {
     display: block;
@@ -391,18 +402,6 @@ body {
   }
   .footer-section a, .footer-section p {
     font-size: 0.6rem;
-  }
-  .about-section {
-    font-size: 0.8rem;
-    text-align: center;
-  }
-  .about-section p {
-    font-size: 0.7rem;
-  }
-  .about-section img {
-    width: 60vw;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
